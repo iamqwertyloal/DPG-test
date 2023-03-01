@@ -1,0 +1,132 @@
+$color-gray-lightest: #b9bee5;
+$color-gray-light: #797ea3;
+$color-gray-medium: #3f4363;
+$color-gray-dark: #2c2f47;
+$color-gray-darkest: #171929;
+
+$color-white: #fff;
+$color-black: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("/img/cosmos.jpeg");
+  background-size: cover;
+  background-position: top;
+}
+
+.main-content {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 10rem;
+
+  .welcome-text {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 6.6rem;
+    color: $color-white;
+  }
+
+  .container {
+    max-width: 20%;
+    min-width: 30rem;
+    padding: 4rem;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    background-color: $color-gray-darkest;
+    border-radius: 2.7rem;
+
+    .contact-form {
+      &__heading {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-white;
+      }
+      &__text {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+
+        margin-top: 1rem;
+        color: $color-gray-light;
+      }
+
+      &__field {
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: 3rem;
+        font-size: 1.8rem;
+
+        &-input {
+          width: 100%;
+          padding: 0.5rem 0;
+          margin: 0.5rem 0;
+
+          font-size: 1.8rem;
+          font-family: "Roboto", sans-serif;
+          color: $color-white;
+          border: none;
+          border-bottom: 0.1rem solid $color-gray-medium;
+          background-color: $color-gray-darkest;
+          outline: none;
+          resize: none;
+        }
+
+        label {
+          position: absolute;
+          left: 0;
+          padding: 0.5rem 0;
+          margin: 0.5rem 0;
+          transform: translateY(-2rem);
+
+          font-size: 1.5rem;
+          pointer-events: none;
+          transition: 0.5s;
+          color: $color-gray-light;
+
+          a:link,
+          a:visited {
+            color: $color-gray-lightest;
+          }
+        }
+
+        &-input:focus {
+          border-bottom: 0.1rem solid $color-white;
+
+          ~ label {
+            color: $color-white;
+          }
+        }
+
+        &-submit {
+          margin: auto;
+          width: 12rem;
+          height: 4rem;
+          font-size: 1.8rem;
+          border: none;
+          border-radius: 2.8rem;
+          cursor: pointer;
+          background-color: $color-gray-dark;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

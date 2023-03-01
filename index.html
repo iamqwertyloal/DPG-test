@@ -4,8 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>DPG Test Task</title>
   </head>
-  <body></body>
+  <body>
+    <section class="main-content">
+      <p class="welcome-text">Hello</p>
+
+      <div class="container">
+        <form action="post" class="contact-form">
+          <h1 class="contact-form__heading">
+            For business enquiries please use the form below
+          </h1>
+          <p class="contact-form__text">*Required</p>
+
+          <div class="contact-form__field">
+            <input
+              type="text"
+              class="contact-form__field-input"
+              name="name"
+              required
+            />
+            <label for="name">Name*</label>
+          </div>
+
+          <div class="contact-form__field">
+            <input
+              type="text"
+              class="contact-form__field-input"
+              name="company"
+              required
+            />
+            <label for="company">Company*</label>
+          </div>
+
+          <div class="contact-form__field">
+            <input
+              type="email"
+              class="contact-form__field-input"
+              name="email"
+              required
+            />
+            <label for="email">E-mail*</label>
+          </div>
+
+          <div class="contact-form__field">
+            <input type="tel" class="contact-form__field-input" name="phone" />
+            <label for="phone">Phone</label>
+          </div>
+
+          <div class="contact-form__field">
+            <input
+              type="text"
+              class="contact-form__field-input"
+              name="subject"
+            />
+            <label for="subject">Subject</label>
+          </div>
+
+          <div class="contact-form__field">
+            <textarea
+              name="message"
+              class="contact-form__field-input"
+              required
+            ></textarea>
+            <label for="message">Message*</label>
+          </div>
+
+          <div class="contact-form__field checkbox">
+            <input
+              class="contact-form__field-checkbox-input"
+              type="checkbox"
+              checked
+              required
+            />
+            <label class="contact-form__field-checkbox-label">
+              I accept
+              <a href="#">Terms and Privacy Policy</a>
+            </label>
+          </div>
+
+          <div class="contact-form__field">
+            <input
+              type="submit"
+              value="Send"
+              class="contact-form__field-submit"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

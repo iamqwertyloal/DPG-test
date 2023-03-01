@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("/img/cosmos.jpeg");
+  background-size: cover;
+  background-position: top; }
+
+.main-content {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 10rem; }
+  .main-content .welcome-text {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 6.6rem;
+    color: #fff; }
+  .main-content .container {
+    max-width: 20%;
+    min-width: 30rem;
+    padding: 4rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #171929;
+    border-radius: 2.7rem; }
+    .main-content .container .contact-form__heading {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #fff; }
+    .main-content .container .contact-form__text {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      color: #797ea3; }
+    .main-content .container .contact-form__field {
+      position: relative;
+      display: flex;
+      width: 100%;
+      margin-top: 3rem;
+      font-size: 1.8rem; }
+      .main-content .container .contact-form__field-input {
+        width: 100%;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        font-size: 1.8rem;
+        font-family: "Roboto", sans-serif;
+        color: #fff;
+        border: none;
+        border-bottom: 0.1rem solid #3f4363;
+        background-color: #171929;
+        outline: none;
+        resize: none; }
+      .main-content .container .contact-form__field label {
+        position: absolute;
+        left: 0;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        transform: translateY(-2rem);
+        font-size: 1.5rem;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #797ea3; }
+        .main-content .container .contact-form__field label a:link,
+        .main-content .container .contact-form__field label a:visited {
+          color: #b9bee5; }
+      .main-content .container .contact-form__field-input:focus {
+        border-bottom: 0.1rem solid #fff; }
+        .main-content .container .contact-form__field-input:focus ~ label {
+          color: #fff; }
+      .main-content .container .contact-form__field-submit {
+        margin: auto;
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        border: none;
+        border-radius: 2.8rem;
+        cursor: pointer;
+        background-color: #2c2f47;
+        color: #fff; }
